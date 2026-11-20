@@ -1,0 +1,68 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.PrivacyProtectorForWindows11
+PackageVersion: '14.1'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: Privacy Protector for Windows 11
+PackageUrl: https://www.softorbits.net/windows-10-privacy-protector/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: 'Answers how to disable telemetry in Windows 11 with one program: switches off tracking services, the DiagTrack log and Microsoft data collection, with a restore point first.'
+Description: |-
+  Privacy Protector for Windows 11 is a single program for anyone who looked up how to disable telemetry in Windows 11 and found a dozen scattered registry tweaks. It turns off telemetry, clears and disables the DiagTrack log, and stops or removes more than 37 tracking services, including ones that remain active after every toggle in the Settings privacy page is off. Windows 10 gets the same controls.
+
+  How to use Privacy Protector for Windows 11
+  1. Install the package and start the program.
+  2. Review the list of privacy fixes and tick the ones you want, or keep all of them.
+  3. Apply the selection. A system restore point is created before anything changes.
+  4. To undo a fix later, revert it from the same window.
+
+  Trial note: the free trial lets you see the available fixes on your own PC before buying. A license unlocks the full version.
+
+  What it handles
+  - Telemetry and the DiagTrack diagnostic log.
+  - Tracking tasks in services such as Customer Experience Improvement Program, Application Experience, Power Efficiency Diagnostics, Disk Diagnostic and Office Telemetry.
+  - Collection of what you type on the keyboard.
+  - Cortana background activity and Bing Search in the Start menu.
+  - Recall, Copilot and other built-in AI features.
+  - OneDrive and built-in Metro and Universal apps, which can be uninstalled.
+  - Windows Update and Microsoft Office updates, which can be blocked, plus selective removal of updates that add tracking.
+  - Microsoft tracking servers, blocked in the hosts file and by Windows Firewall rules.
+
+  Anyone working out how to disable telemetry in Windows 11 should know that most fixes can be reverted. A few changes go deeper and cannot be undone even with System Recovery, so read the list before applying everything. Uninstalling the program removes its hosts entries and firewall rules.
+
+  Who it is for
+  Windows 11 users asking how to stop Windows 11 from tracking you without editing the registry by hand, people who keep a PC for private work, and admins checking how to turn off data collection in Windows 11 on machines they manage.
+
+  Questions
+
+  What does telemetry do in Windows 11?
+  It collects diagnostic and usage data on the PC and sends it to Microsoft. The program limits what is gathered and blocks where it is sent.
+
+  Is it a good idea to disable telemetry?
+  For privacy, yes, as less data leaves the machine. Once you settle how to disable telemetry in Windows 11 on a work PC, keep the restore point the program makes in case a removed component turns out to be needed.
+
+  How do I deactivate Windows telemetry?
+  Open the program, keep the telemetry and DiagTrack fixes ticked and apply them. That is the short answer to how to disable telemetry in Windows 11, and the hosts and firewall blocks stop the remaining traffic.
+Tags:
+- block-telemetry
+- diagtrack
+- disable-cortana
+- disable-telemetry
+- firewall-rules
+- hosts-file
+- how-to-disable-telemetry-in-windows-11
+- privacy-tool
+- remove-bloatware
+- stop-tracking
+- windows-11-privacy
+PurchaseUrl: https://www.softorbits.net/windows-10-privacy-protector/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
