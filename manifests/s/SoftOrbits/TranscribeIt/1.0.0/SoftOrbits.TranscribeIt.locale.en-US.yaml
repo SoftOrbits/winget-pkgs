@@ -1,0 +1,66 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.TranscribeIt
+PackageVersion: 1.0.0
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: TranscribeIt - Audio & Video to Text Transcriber
+PackageUrl: https://www.softorbits.net/audio-video-to-text-transcriber/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: TranscribeIt converts speech in audio and video recordings into plain .txt files on a Windows PC, working through batches with a local speech model and a bundled decoder for many media formats.
+Description: |-
+  TranscribeIt is a Windows program that turns finished interviews, lectures, calls and screen recordings into plain text files, with speech recognition done on the local machine. You queue the files, start the job and collect a .txt for each source. Nothing goes to an online service, and once the Parakeet V3 speech model (around 400 MB) has been downloaded, the work continues without a network connection.
+
+  How to use TranscribeIt: Audio & Video to Text Transcriber
+  1. Install the package and open the program. The first run fetches the speech model.
+  2. Drop recordings onto the window, or add a whole folder of them.
+  3. Decide where the text goes: next to each original file or into one shared output folder.
+  4. Start the queue and watch each file move through it.
+  5. Select a finished item to play the recording and correct its text in the editor beside the player.
+
+  Trial note: the free trial handles three files per calendar day, counted in UTC, and then shows a purchase reminder. A license removes the daily file cap.
+
+  What it handles
+  - Audio such as MP3, M4A and AC3, and video containers like MP4, MKV, AVI, WMV, TS and VOB.
+  - A bundled copy of ffmpeg, so these formats open without installing extra codecs.
+  - Batch queues built from single files, drag-and-drop or a folder.
+  - One plain .txt output for every recording.
+  - A studio view with the file list, a media player and a text editor in one window.
+  - A separate data folder for settings, the model and the license, kept apart from other SoftOrbits speech tools.
+  - A small interface where the gear icon opens only the About page, with no live dictation mode.
+
+  Who it is for
+  Journalists who need quotes from interview tapes, researchers working through field recordings, students with recorded classes and content makers who need video to text output for show notes. For an admin it is an audio video to text transcriber that installs from the command line and keeps every recording on the PC where it was saved.
+
+  Questions
+
+  Is there a free way to convert a video into a transcript?
+  Yes, within limits. The free trial converts up to three files a day, and a video file goes into the queue the same way as an audio file.
+
+  What does transcribe mean for an audio file?
+  It means writing down the spoken words of a recording as text. The program does that step for you and stores the result in a .txt file.
+
+  How much does a transcriber cost?
+  TranscribeIt is paid for with a software license. Plans are lifetime, 1-year, monthly and business, and current prices are listed on the product page.
+Tags:
+- audio-to-text
+- batch-transcription
+- interview-transcription
+- lecture-transcription
+- mp3
+- mp4
+- offline-transcription
+- speech-to-text
+- transcribeit
+- transcription
+- video-to-text
+PurchaseUrl: https://www.softorbits.net/audio-video-to-text-transcriber/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
