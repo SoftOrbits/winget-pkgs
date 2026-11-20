@@ -1,0 +1,68 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.FileShredder
+PackageVersion: '3.7'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: File Shredder - Disk Wipe Software
+PackageUrl: https://www.softorbits.net/file-shredder-disk-wipe-software/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: File shredder for Windows 10 and 11 that overwrites chosen files, leftover free space or a spare data volume, and can save a PDF certificate naming the pattern and pass count.
+Description: |-
+  File Shredder & Disk Wipe - Secure Data Eraser is a file shredder for Windows 10 and 11 that writes over the bytes of whatever you select, so recovery tools find patterns instead of your documents. It works on individual files and folders, on the free space Windows left after earlier deletions, and on a whole non-system volume such as an external disk.
+
+  How to use File Shredder & Disk Wipe - Secure Data Eraser
+  1. Install the package and start the program.
+  2. On the start screen choose Shred Files, Wipe Free Space or Wipe Drive.
+  3. Drop files and folders into the list, or select the volume to clear.
+  4. Choose an overwrite pattern and confirm the target a second time.
+  5. Press Start and watch the pass counter and the remaining size.
+  6. Save the certificate as a PDF when the run ends.
+
+  Trial note: the free trial never expires and shreds files and folders with a single pass as often as you like. A license unlocks the multi-pass patterns, Wipe Free Space, Wipe Drive, the PDF certificate and Remote Wipe.
+
+  What it handles
+  - Zeroes, Random, DoD 5220.22-M in 3 and 7 passes, NIST 800-88, Gutmann with 35 passes, US Army AR380-19, GOST R 50739-95, German VSITR, British HMG IS5, NATO, Schneier, Pfitzner and a custom pass count as overwrite patterns.
+  - Free space wiping, which reaches remains of files you deleted long ago without touching the files you keep.
+  - Drive wiping for secondary and external volumes. The disk Windows boots from is excluded on purpose.
+  - Media detection. Repeated passes suit a hard disk, while on an SSD the program recommends the drive's own Secure Erase command.
+  - A cancel button that stops the job between passes, so no file is left half overwritten.
+  - Remote Wipe through a Telegram bot you create yourself, limited to folders you marked beforehand.
+
+  Secure file deletion matters because Windows only removes the name of a deleted file from the index. The content stays on the disk until something else lands on the same clusters, and undelete tools read it from there.
+
+  Who it is for
+  People who keep scans of passports, tax papers or contracts and want them gone for good. Admins who use it as file shredder disk wipe software to retire a data disk before it leaves the building. Small offices that need disk wipe software with a written record for each job.
+
+  Questions
+
+  What does a file shredder do?
+  It replaces the contents of a file with zeros, random data or a fixed pattern before removing it. Recovery programs then read only those replacement bytes.
+
+  Does file shredding really work?
+  On a hard disk, yes, even one pass makes recovery impractical outside a lab. Copies made earlier, such as temp files, are handled by running Wipe Free Space afterwards.
+
+  How do I completely wipe a hard drive?
+  Pick Wipe Drive, select the secondary or external volume and run a pattern your policy names. For the system disk or an SSD, the drive's built-in Secure Erase is the right method.
+Tags:
+- data-eraser
+- delete-files-permanently
+- disk-wipe
+- dod-5220
+- file-shredder
+- gutmann
+- hard-drive-eraser
+- privacy
+- remote-wipe
+- secure-erase
+- wipe-free-space
+PurchaseUrl: https://www.softorbits.net/file-shredder-disk-wipe-software/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
