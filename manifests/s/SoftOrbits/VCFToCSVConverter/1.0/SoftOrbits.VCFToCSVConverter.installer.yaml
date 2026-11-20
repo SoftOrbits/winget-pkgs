@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.VCFToCSVConverter
+PackageVersion: '1.0'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: VCF to CSV Converter_is1
+AppsAndFeaturesEntries:
+- ProductCode: VCF to CSV Converter_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.softorbits.com/filesNew/v/1.0/VcfToCsv.exe
+  InstallerSha256: 7D32966AD4FFB7475F6B5E84AF06686C209FD56AE9869EF7523E194CCD16E27B
+ManifestType: installer
+ManifestVersion: 1.12.0

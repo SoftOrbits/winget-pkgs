@@ -1,0 +1,72 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.VCFToCSVConverter
+PackageVersion: '1.0'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: VCF to CSV Converter
+PackageUrl: https://www.softorbits.net/vcf-to-csv-converter-software/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: 'Windows program that turns VCF to CSV in batch: it reads a folder of vCard files from phones and mail apps and writes one CSV ready for a CRM, Google Contacts or Outlook import.'
+Description: |-
+  VCF to CSV Converter for CRM Import is a Windows 10 and 11 program that collects many vCard files and turns VCF to CSV in one pass, producing a single spreadsheet of contacts. It is meant for the moment a contact list has to move into a CRM, Google Contacts, Outlook or Excel while the source is a pile of .vcf exports from phones and old address books. All parsing happens on the local PC, with no upload and no account.
+
+  How to use VCF to CSV Converter for CRM Import
+  1. Add single .vcf files or a whole folder. Subfolders are scanned too, and one file may hold many cards.
+  2. Click a file in the list to see its parsed contacts as text in the preview panel.
+  3. On the Convert tab pick an output template: Google Contacts, Outlook, Yahoo or plain CSV.
+  4. Decide how several phones or emails of one person are written: numbered columns, or one column joined with a separator.
+  5. Open the column mapper, untick fields you do not need and move the rest up or down.
+  6. Check the preview grid, merge the duplicates it finds, and start the VCF to CSV export into one file.
+
+  Trial note: the free trial handles 10 contacts in every run, so you can test an import on a sample. A license removes that per-run limit.
+
+  What it handles
+  - vCard 2.1, 3.0 and 4.0, including files with many cards inside.
+  - QUOTED-PRINTABLE text and per-field CHARSET and ENCODING values, so Cyrillic and CJK names come out readable.
+  - Files without a declared charset, where the encoding is detected automatically.
+  - Output in UTF-8 with a BOM, following RFC 4180, which lets Excel show non-Latin letters on a double click.
+  - TYPE labels on phones and addresses, mapped to the columns each template expects.
+  - Custom X- fields kept as extra columns instead of being dropped.
+  - Embedded contact photos saved to a folder next to the CSV, with the file path in a column.
+  - Birthdays written as YYYY-MM-DD.
+
+  What it does not do
+  There is no way back from CSV to vCard in this version, and column headers cannot be renamed inside the mapper. Every VCF to CSV job runs offline, so it also cannot fetch contacts from a cloud account by itself.
+
+  Who it is for
+  Sales and support staff who load a vcard to csv export into a CRM, and office admins who merge address books after a phone change. Teams that must convert VCF to CSV for Excel without sending personal data to a web service can keep the whole job on one PC.
+
+  A local converter also fits companies with strict privacy rules, since the contact list never leaves the machine.
+
+  Questions
+
+  How do I import contacts from a VCF file?
+  Convert the VCF file with the template of the target app, then use that app's CSV import. Google Contacts, Outlook and Yahoo layouts are built in.
+
+  How do I export phone numbers from a VCF file to CSV?
+  Add the file and run the export. Each number keeps its TYPE label, and you choose numbered columns or one joined column for people with several numbers.
+
+  Can I convert a VCF file to CSV online?
+  Online services exist, but they need your contacts uploaded first. This program does the VCF to CSV step on your PC with no connection.
+Tags:
+- address-book
+- contact-import
+- contact-management
+- contacts-to-csv
+- crm-import
+- csv-export
+- vcard
+- vcard-to-csv
+- vcf-converter
+- vcf-to-csv
+PurchaseUrl: https://www.softorbits.net/vcf-to-csv-converter-software/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
