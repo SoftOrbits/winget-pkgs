@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.RemoveLogoNow
+PackageVersion: '11.1'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: Remove Logo Now!_is1
+AppsAndFeaturesEntries:
+- ProductCode: Remove Logo Now!_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.softorbits.com/filesNew/v/11.1/RemoveLogoNow.exe
+  InstallerSha256: 5DADE44B131AB46B8DD1ED20B7EE9467B9FC6B391643519633B33B09E53545BE
+ManifestType: installer
+ManifestVersion: 1.12.0

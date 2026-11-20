@@ -1,0 +1,70 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.RemoveLogoNow
+PackageVersion: '11.1'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: Remove Logo Now!
+PackageUrl: https://www.softorbits.net/remove-watermark-from-video/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: 'Desktop tool to remove watermark from video files on Windows: finds a logo, caption or text overlay automatically and cleans it out of every frame, one clip or a whole batch.'
+Description: |-
+  Remove Logo Now is a video logo remover for Windows that lets you remove watermark from video clips you are allowed to edit, such as stock footage that still carries a mark or your own recordings with an old channel badge. Each frame is decoded on your PC, a removal algorithm treats the chosen area, and the clip is encoded again. Nothing is uploaded.
+
+  How to use Remove Logo Now
+  1. Add videos with Add Files or by dragging them into the window.
+  2. Click Find Logo to detect the overlay area automatically.
+  3. Correct the selection by hand if the detected frame is off.
+  4. If the mark appears only in some scenes, set those stretches under Intervals.
+  5. Press Start.
+  6. Open the output folder when the job ends.
+
+  Trial note: a free trial is available to test the program on your own clips. A license turns it into the full version.
+
+  What it handles
+  - Static and moving overlays, channel logos, text and image watermarks.
+  - Semi-transparent marks. When automatic detection misses one, a manual area does the job.
+  - Subtitles burned into the picture, which Find Logo can often locate and clean.
+  - Batch mode, where each file gets its own automatic detection.
+  - Phone footage in HEVC, VP9 or AV1, read directly. Rotation from the phone metadata is respected, so the mask sits correctly on vertical video.
+  - Interval borders measured by frame time for precise cuts.
+  - Hardware encoding through NVENC, AMF or Quick Sync, with Media Foundation and x264 as fallbacks. The first encoder that passes a test is used.
+  - Output to 14 formats including MP4, MOV, AVI, MKV, WMV, FLV and 3GP, with a choice of bitrate and frame rate.
+  - Your own watermark added to the result, and a command line mode for scripts.
+
+  Whenever you remove watermark from video here, the file is read and written by FFmpeg 7.1 running as a separate process. Its GPL license text and source link are in the licenses folder of the installation.
+
+  Who it is for
+  Editors cleaning purchased clips, YouTube and course authors who need to remove logo from video they recorded under an older brand, and anyone who would rather keep footage on the local disk. Make sure you hold the rights to the material before removing a mark from it.
+
+  Questions
+
+  Can I remove a watermark from a video without blur?
+  Yes. The program runs a dedicated logo removal algorithm on the area, which leaves fewer traces than simple blurring.
+
+  Does it use AI to remove watermarks from video?
+  No heavy AI model is involved. Processing algorithms run locally and use a graphics card when present, so an ordinary PC is enough.
+
+  Can I remove a logo and a watermark from one video?
+  Yes. Mark each area, and use Intervals if one of them shows up only for part of the clip.
+Tags:
+- batch-video
+- delogo
+- mp4
+- remove-logo-from-video
+- remove-subtitles
+- remove-watermark-from-video
+- video-cleanup
+- video-editing
+- video-logo-remover
+- watermark-remover
+PurchaseUrl: https://www.softorbits.net/remove-watermark-from-video/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
