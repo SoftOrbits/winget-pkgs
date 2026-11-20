@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.EventLogViewingAndMonitoring
+PackageVersion: '3.2'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: Event Log Viewing and Monitoring Software_is1
+AppsAndFeaturesEntries:
+- ProductCode: Event Log Viewing and Monitoring Software_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.softorbits.com/filesNew/v/3.2/EventLogViewerSetup.exe
+  InstallerSha256: 828E9883805C9CFC3948051926A1715B17BE119A593F053FB510C98201AB9678
+ManifestType: installer
+ManifestVersion: 1.12.0

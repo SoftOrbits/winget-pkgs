@@ -1,0 +1,65 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.EventLogViewingAndMonitoring
+PackageVersion: '3.2'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: Event Log Viewing and Monitoring Software
+PackageUrl: https://www.softorbits.net/windows-event-log-viewer/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: Event log viewer for Windows that explains each record from a built-in reference, opens live channels and .evtx files from other machines, and raises tray alerts from monitoring rules.
+Description: |-
+  Windows Event Log Viewer is an event log viewer for Windows 10 and 11 that reads live channels and saved .evtx or .evt files and shows, next to each record, what the event means. A built-in reference covers 181 events, from Security 4624 and 4625 to System 41 and 6008, with parameters such as logon type spelled out. Everything from filtering to remote reading sits in one window, and no record is uploaded.
+
+  How to use Windows Event Log Viewer
+  1. Install the package and start the program. Pick Application, System, Security or Setup in the tree, or a provider channel under Applications and Services Logs.
+  2. To read a saved journal, open an .evtx or older .evt file through the File menu.
+  3. Type an Event ID or source into the filter and set a time range. Fifteen built-in filter templates cover common investigations.
+  4. Select a record to read what it means and what each parameter says.
+  5. For event log monitoring, add a rule on the Monitoring tab, for example Security 4625 five times in ten minutes.
+  6. Save the tabs and filters as a workspace, or export the list.
+
+  Trial note: the free trial runs for 10 days with unrestricted reading of this computer's own logs, but exported files are capped at 20 rows and each explanation is cut to its headline. A license removes those caps and unlocks monitoring, log merging, damaged-file recovery, deep scan, SQL export and remote machines.
+
+  What it handles
+  - Filters compiled into XPath and executed by Windows itself before rows are loaded, so a query over tens of thousands of records returns in milliseconds.
+  - Large journals: about four seconds to index a file of 300,000 records, with rows paged in as you scroll.
+  - Damaged files: deep scan searches the bytes for ElfChnk chunk signatures when the header is gone.
+  - An event chain, a pivot summary by ID or source, custom columns from event XML and .elvsnap snapshots of a selection.
+  - Two logs merged into one timeline, for example System with Application.
+  - Remote reading over RPC with admin credentials, plus a /24 subnet scan.
+  - Export to CSV, Excel, HTML, PDF or straight into a SQL Server table.
+  - 20 interface languages. The WebView2 runtime is required.
+
+  Who it is for
+  Administrators and power users who need to find out why a service stopped or why a sign-in failed. As an evtx viewer it also helps with files from servers you cannot log into: the provider DLL is missing on your PC, so Windows has no message text, and the reference fills it in for known IDs.
+
+  Questions
+  How do I view event logs on Windows?
+  Open the program and choose a channel in the tree, and records appear newest first. Saved .evtx files open through the File menu.
+
+  How can I check Windows activity logs?
+  Look at the Security channel for sign-ins such as 4624, 4625 and 4634, and at System for restarts such as 1074 and 6008. Reading Security needs an elevated session.
+
+  Is there an alternative to the built-in Event Viewer?
+  Yes, this event log viewer reads the same channels and files and adds an explanation to each known record plus monitoring rules.
+Tags:
+- event-id
+- event-log-monitoring
+- event-log-viewer
+- evtx
+- evtx-viewer
+- log-analysis
+- security-log
+- sysadmin-tools
+- windows-event-log
+PurchaseUrl: https://www.softorbits.net/windows-event-log-viewer/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
