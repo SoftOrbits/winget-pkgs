@@ -1,0 +1,72 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.MailMergeForOutlookAndExcel
+PackageVersion: '3.2'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: Mail Merge for Outlook and Excel with Attachments
+PackageUrl: https://www.softorbits.net/mail-merge-for-outlook-and-excel/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: Outlook mail merge program for Windows that sends personal emails from an Excel or CSV list, each with its own subject, text and file attachment, through your mailbox or SMTP.
+Description: |-
+  Mail Merge with Attachments for Outlook runs an Outlook mail merge from a standalone Windows program: you load a recipient list, write one template with placeholders and send a separate letter for every row. A personal attachment can come from a column that holds file paths, so a payslip or an invoice reaches only its owner. Mail leaves through your own mailbox, signed in over Microsoft Graph, or through an SMTP server you configure.
+
+  How to use Mail Merge with Attachments for Outlook
+  1. Step 1, List: import an .xlsx workbook, a CSV file, Outlook contacts or contacts from a .pst or .ost file. Confirm which columns the program picked for the address, name, Cc and Bcc.
+  2. Select rows with search, an exclusion list or a row range.
+  3. Step 2, Message: write the subject and body with {{Field}} placeholders, or bring in an HTML file.
+  4. Attach shared files for everyone and, if needed, a personal file per row.
+  5. Step 3, Check: page through the merged letters, fix the rows the check flags and send a test letter to yourself.
+  6. Step 4, Send: sign in to your mailbox or enter SMTP details, set the pace and start now or at a chosen time.
+
+  Trial note: the free trial accepts 25 recipients in a single run. Every feature works, and a license lifts that recipient limit.
+
+  What it handles
+  - Cc and Bcc filled from list columns.
+  - Excel files with several sheets, non-Latin names and leading zeros kept as typed.
+  - New Outlook, Outlook Classic and personal Outlook accounts through the Microsoft Graph sign-in.
+  - SMTP for on-premises Exchange, hosting mailboxes or Gmail with an app password.
+  - A pre-send check for missing files, empty, invalid or repeated addresses and unknown fields, with row numbers.
+  - Letters per minute, a scheduled start, pause and resume after a dropped connection without duplicate letters.
+  - A project file that reuses the list, template and settings next month. Passwords and tokens are not stored in it.
+  - A report saved after the run, plus Retry the errors for refused letters.
+  - An interface in 20 languages.
+
+  Who it is for
+  Accountants and HR staff who send payslips and statements, schools and associations that mail fees and reports, and small offices without IT staff. People looking for mail merge for Outlook and Excel with attachments that installs nothing into Outlook get a separate program instead of an add-in.
+
+  An Outlook mail merge with a different file per person is the main job here. The installer ships the .NET runtime, and Windows 10 or 11 is required.
+
+  Teams that used to build a mail merge for Outlook and Excel by hand in Word can move the same spreadsheet into this program. A finished Outlook mail merge can be saved as a project and rerun with next month's data.
+
+  Questions
+
+  Why is there no mail merge option in Outlook?
+  Outlook relies on Word for a merge, and that route has no personal attachments or Cc fields. This program runs the whole merge outside Outlook and also works with the new Outlook.
+
+  How do I send a bulk email from Outlook?
+  Run an Outlook mail merge from this program and send through your own mailbox. Each person gets a separate letter, and your provider decides how many can go per day.
+
+  What is the easiest way to run a mail merge?
+  Keep the data in one Excel sheet with a column per field, then follow the four steps of the program. A saved project lets you repeat the Outlook mail merge with a new sheet.
+Tags:
+- bulk-email
+- csv-mailing
+- email-attachments
+- excel-to-email
+- mail-merge
+- mass-mailing
+- outlook-mail-merge
+- payslip-email
+- personalized-email
+- smtp
+PurchaseUrl: https://www.softorbits.net/mail-merge-for-outlook-and-excel/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
