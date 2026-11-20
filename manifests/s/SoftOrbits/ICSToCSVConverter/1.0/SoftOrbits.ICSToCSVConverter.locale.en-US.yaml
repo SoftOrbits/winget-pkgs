@@ -1,0 +1,67 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.ICSToCSVConverter
+PackageVersion: '1.0'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: ICS to CSV Converter
+PackageUrl: https://www.softorbits.net/ics-to-csv-converter-software/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: 'ICS to CSV conversion for Windows: merges a folder of .ics or .vcs calendar files into one spreadsheet-ready table with time zones read from each file, for Excel, Google or Outlook.'
+Description: |-
+  ICS to CSV Converter is a Windows program that does ICS to CSV conversion in batches: it takes many .ics files, plus older .vcs files, and writes a single CSV where each event, task or journal entry gets its own row. Time zone definitions stored inside each calendar decide the hour of every event, so start times in the table match what the calendar showed. Processing stays on the local PC.
+
+  How to use ICS to CSV Converter
+  1. Install and start the program, then drop .ics files on the window or use Add Files or Add Folder. Nested folders are included.
+  2. Pick the template: Google Calendar, Outlook Calendar or Plain with all parsed fields.
+  3. Set the output zone: the original zone of each event, UTC, or the zone of this PC.
+  4. Choose whether attendees and categories go into numbered columns or one joined column.
+  5. Optionally open the column mapper to drop, reorder or rename fields.
+  6. Click a file in the list to preview its events as text, then press Start.
+
+  Trial note: the free trial stops after 10 events in each run and displays a reminder. A license removes the cap and the reminder.
+
+  What it handles
+  - VTIMEZONE blocks with standard and daylight rules, applied for the date of each event. When a file has none, a table of common zone names fills in and the row is flagged.
+  - All-day events with an exclusive DTEND, so a one-day entry stays on one day in the CSV.
+  - Events stored with a DURATION value instead of an end time.
+  - VTODO due date, completion and progress, VJOURNAL text, and reminders from VALARM.
+  - Repeat rules as the raw RRULE plus a readable description of the pattern.
+  - vCalendar 1.0 files with QUOTED-PRINTABLE and CHARSET properties, so non-Latin titles survive.
+  - Duplicate events with the same UID, which collapse into a single row.
+  - UTF-8 output with a byte-order mark, RFC 4180 quoting and CRLF line ends.
+  - One direction only. Turning CSV back into ICS is not part of this version.
+
+  Who it is for
+  People who move a calendar between accounts, freelancers who export calendar to CSV to build timesheets or invoices, and analysts who go from ICS to Excel for pivot tables over meetings. Anyone holding a backup of an old phone in .vcs format can read it again as rows.
+
+  Questions
+  How do I export an entire calendar?
+  Export it as an .ics file from the calendar app, then run that file through this converter for ICS to CSV output. Every event, task and journal entry ends up as a row of one CSV.
+
+  How do I turn a Google Calendar export into CSV?
+  Add the .ics that Google gives you and keep the Google Calendar template. Dates come out as MM/DD/YYYY and times with AM/PM, the way Google reads them on import.
+
+  How can an Outlook calendar end up in Excel?
+  Save the Outlook calendar as .ics, convert it with the Outlook Calendar or Plain template and open the CSV in Excel. The byte-order mark lets Excel show accented and non-Latin titles correctly.
+Tags:
+- calendar-converter
+- csv
+- export-calendar-to-csv
+- google-calendar
+- icalendar
+- ics
+- ics-to-csv
+- ics-to-excel
+- outlook-calendar
+- vcs
+PurchaseUrl: https://www.softorbits.net/ics-to-csv-converter-software/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

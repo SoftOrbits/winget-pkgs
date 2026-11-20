@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.ICSToCSVConverter
+PackageVersion: '1.0'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: ICS to CSV Converter_is1
+AppsAndFeaturesEntries:
+- ProductCode: ICS to CSV Converter_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.softorbits.com/filesNew/v/1.0/IcsToCsv.exe
+  InstallerSha256: C59EA5DE6D6ACFD82A2E60498A6C8E41DFBC66A0348E2FEA93F29BDD97B2F5B5
+ManifestType: installer
+ManifestVersion: 1.12.0
