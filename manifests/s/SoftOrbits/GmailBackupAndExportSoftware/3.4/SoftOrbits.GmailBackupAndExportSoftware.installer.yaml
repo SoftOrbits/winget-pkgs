@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.GmailBackupAndExportSoftware
+PackageVersion: '3.4'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: Gmail Backup & Export Software to PST and MBOX_is1
+AppsAndFeaturesEntries:
+- ProductCode: Gmail Backup & Export Software to PST and MBOX_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.softorbits.com/filesNew/v/3.4/GmailBackupSetup.exe
+  InstallerSha256: 338EBD49A56B34D7732E87FD43039773CA1FC3520C06966408DD6F2318EBDE30
+ManifestType: installer
+ManifestVersion: 1.12.0
