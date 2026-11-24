@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.EDBToPSTConverterTool
+PackageVersion: '1.3'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: EDB to PST Converter Tool_is1
+AppsAndFeaturesEntries:
+- ProductCode: EDB to PST Converter Tool_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.softorbits.com/filesNew/v/1.3/EdbToPst.exe
+  InstallerSha256: 3EBBB6E4730B4785A13F5A0D8D9444BF828F7A85DA3FF4D9E35C8CF9AC6C9667
+ManifestType: installer
+ManifestVersion: 1.12.0
