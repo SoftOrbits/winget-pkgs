@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.FocusStackingSoftware
+PackageVersion: '1.1'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: Focus Stacking Software_is1
+AppsAndFeaturesEntries:
+- ProductCode: Focus Stacking Software_is1
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.softorbits.com/filesNew/v/1.1/FocusStackingSoftware.exe
+  InstallerSha256: F9DDB2D3D33778CA9E91365AAC9A48BB902BDAEE9B0EA0DD1422BC81234F36BA
+ManifestType: installer
+ManifestVersion: 1.12.0
