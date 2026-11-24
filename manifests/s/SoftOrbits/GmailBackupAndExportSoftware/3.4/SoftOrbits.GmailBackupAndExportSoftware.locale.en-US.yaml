@@ -1,0 +1,71 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.GmailBackupAndExportSoftware
+PackageVersion: '3.4'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: Gmail Backup & Export Software to PST and MBOX
+PackageUrl: https://www.softorbits.net/gmail-backup-software/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: Gmail backup tool for Windows that downloads mail from Gmail or any IMAP account into EML, MBOX or PST files on a local disk, with the folder tree and labels kept.
+Description: |-
+  Gmail Backup & Export Software to PST and MBOX makes a Gmail backup on a Windows PC by reading the mailbox over IMAP and writing the folders you choose to disk as EML, MBOX or PST. Nothing goes through a third-party server. Mail travels from Google straight into the target directory, and the account itself is only read, never changed.
+
+  Check the sign-in method before you install. A Google account connects with an app password, and Google requires 2-Step Verification to be enabled first. Google Workspace accounts cannot sign in this way in the current version. Yahoo Mail and iCloud Mail are built in as well, and any other IMAP host can be entered by server name, port and encryption type.
+
+  How to use Gmail Backup & Export Software to PST and MBOX
+  1. Launch the app and choose Connect Gmail account.
+  2. Type the address and paste the app password generated in your Google account settings.
+  3. Mark the labels and folders you need. Each one shows how many messages it holds.
+  4. Select PST, MBOX or EML as the output and set a destination, local or on a USB drive.
+  5. Press Start backup and let the run finish.
+  6. To refresh the copy, reopen that mailbox later and use Download new emails.
+
+  Trial note: the free trial has no time limit, yet it keeps just the latest 25 messages in each folder. A license removes that cap for every folder.
+
+  What it handles
+  - PST files assembled internally, so a PC without Outlook can still export to PST.
+  - MBOX with one file per folder, in the layout Thunderbird expects.
+  - EML as one file per message inside a tree that mirrors the mailbox.
+  - Gmail labels saved as folders. A message carrying two labels is stored under both.
+  - Incremental Gmail backup runs that fetch only mail received since the last pass.
+  - A resume journal next to the backup, so an interrupted run continues from the message where it stopped.
+  - Several reconnect attempts after a lost connection, plus a disk space check before anything is written.
+  - Read and unread state, kept in PST output.
+
+  Who it is for
+  A Windows user with years of personal mail in Google who wants an offline copy, a freelancer whose client threads are organized by label, and the person looking after a family or small office PC who handles Gmail backup export to PST and MBOX for several personal accounts in turn. It needs 64-bit Windows 10 or 11. Contacts, calendar and Drive are outside its scope, and it does not upload mail back into an account.
+
+  Questions
+
+  How do I get a Gmail backup onto my PC?
+  Install the package, connect the account with an app password, tick the labels and press Start backup. The messages are saved as files in the destination you set in step 4.
+
+  How can I view the emails in a Gmail backup?
+  Open the PST in Outlook, import the MBOX files into Thunderbird, or double-click an EML file to read one message in your default mail app. Reading the copy later does not require this program.
+
+  How do I retrieve old emails from Gmail?
+  Old mail that is still in the account comes down together with the folders you tick, whatever its age. Messages archived without any label exist only in All Mail, which is unticked by default, so tick it to include them.
+Tags:
+- email-archive
+- email-backup
+- eml
+- export-to-pst
+- gmail-backup
+- gmail-to-eml
+- gmail-to-mbox
+- gmail-to-pst
+- imap-backup
+- mailbox-download
+- mbox
+- pst
+PurchaseUrl: https://www.softorbits.net/gmail-backup-software/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
