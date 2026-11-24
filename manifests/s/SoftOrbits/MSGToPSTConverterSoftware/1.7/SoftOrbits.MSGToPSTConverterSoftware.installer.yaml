@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.MSGToPSTConverterSoftware
+PackageVersion: '1.7'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: MSG to PST Converter Software_is1
+AppsAndFeaturesEntries:
+- ProductCode: MSG to PST Converter Software_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.softorbits.com/filesNew/v/1.7/MsgToPst.exe
+  InstallerSha256: 8A54A3023D074E8A66D692C9808B70A5D4ABA78DACF73B8589E22A2E15DF0FB6
+ManifestType: installer
+ManifestVersion: 1.12.0
