@@ -1,0 +1,69 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.MSGToPSTConverterSoftware
+PackageVersion: '1.7'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: MSG to PST Converter Software
+PackageUrl: https://www.softorbits.net/msg-to-pst-converter/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: MSG to PST converter for Windows that collects Outlook .msg files dragged out of Outlook or exported by ticket systems and packs the whole set into one PST archive.
+Description: |-
+  MSG to PST Converter Software for Outlook is an msg to pst converter that gathers separate .msg message files and writes all of them into a single Outlook data file on Windows. Users often drag important mail out of Outlook onto the desktop, and help desk systems export tickets in the same format, so years of correspondence end up as thousands of loose files. The program reads each one locally, with Outlook closed and nothing uploaded to a web service, and the whole set lands in one Unicode PST.
+
+  How to use MSG to PST Converter Software for Outlook
+  1. Run the installer, then start the program.
+  2. Add the .msg files you want in the archive.
+  3. Pick a folder for the output PST.
+  4. Start the job. Every added message is merged, so there is only one result file.
+  5. Attach that PST to Outlook, or bring its contents into an existing mailbox.
+
+  Trial note: the free trial handles a set of up to 20 messages completely. Beyond that it writes 10 percent of the set, never more than 100 messages, and a license takes the limit away.
+
+  What it carries over
+  - Subject lines, including Cyrillic text in the subject and the sender name.
+  - Message bodies in HTML or plain text.
+  - Sender and recipients in From, To and Cc, sent dates, and whether each item was read.
+  - Attachments with their bytes unchanged.
+  - A Unicode PST that Outlook 2016 opened during testing.
+
+  How the files are read
+  Inside the program each .msg is turned into a standard MIME message before a PST writer stores it. Nothing in that chain depends on an installed copy of Outlook.
+
+  What is not included
+  The program cannot sign in to IMAP or Exchange servers, has no command line mode and ships without a Mac version. Separate SoftOrbits products cover EML, MBOX, OST and OLM, and sources locked by a password cannot be read.
+
+  Who it is for
+  Admins who need to convert msg to pst after users saved mail as files on shared drives. Support teams that pull message exports from a ticket system and want them searchable in Outlook. Anyone with a folder of saved messages who would rather open one msg to pst archive than hundreds of separate items.
+
+  Questions
+
+  How do I convert MSG to PST?
+  Add the .msg files, choose an output folder and start. All of them end up in one PST, ready to attach in Outlook.
+
+  Can a PST file be converted back to MSG?
+  Not with this program, which works in one direction only, from MSG files into a PST.
+
+  Why can't I open a set of .msg files in Outlook as one mailbox?
+  Each .msg holds one message, and Outlook treats it as a single item. Converting the set gives you one data file that holds all of them.
+Tags:
+- email-migration
+- mail-archive
+- msg
+- msg-converter
+- msg-to-pst
+- outlook-import
+- outlook-msg
+- pst
+- saved-emails
+- unicode-pst
+PurchaseUrl: https://www.softorbits.net/msg-to-pst-converter/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
