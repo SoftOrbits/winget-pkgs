@@ -1,0 +1,72 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.EmailToPDFConverter
+PackageVersion: '1.3'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: Email to PDF Converter
+PackageUrl: https://www.softorbits.net/email-to-pdf-converter-software/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: An email to pdf converter for Windows that turns saved .eml, Outlook .msg, .pst, .ost and .mbox mail into PDF, HTML and TXT documents in one batch on your own computer, with no mail client running.
+Description: |-
+  Any Email to PDF Converter Software is an email to pdf converter that a Windows admin can install from the command line and run with no mail client on the box. It reads saved mail in every common format and writes each message as a PDF, HTML or TXT file on the local machine, which is a quick way to turn an inbox into documents during a migration or an audit.
+
+  Single .eml and Outlook .msg messages are read one by one. A .pst, .ost or .mbox archive opens by itself and sends every folder and every message to the queue, so a large mailbox needs no manual picking. Everything happens on your own PC, with no Outlook or Thunderbird process in memory and no upload to a cloud convert service.
+
+  How to use Any Email to PDF Converter Software
+  1. Install the package and start the program.
+  2. Add mail files by drag and drop, by Add Files, or by pointing it at a folder. Loose messages and whole archives can sit in one list.
+  3. Give any .pst, .ost or .mbox file a moment to open so its messages reach the queue.
+  4. Pick PDF, HTML or TXT as the output format.
+  5. Choose one document per message or one combined document for the list.
+  6. Decide how each email attachment is handled: embedded in the PDF, saved to a folder with links, or listed by name and total size.
+  7. Set the destination folder, start the run, and open the results when it finishes.
+
+  Trial note: the program is offered as a free trial. Without a license a list of up to 10 emails converts in full, and a longer list or a whole archive stops after the first 10 documents of the run. A license removes that cap.
+
+  What it handles
+  - .eml messages that follow the RFC 822 standard.
+  - Outlook .msg messages, including plain text saved under the .msg name by other apps.
+  - Outlook .pst and .ost archives read straight from disk.
+  - .mbox mailboxes from Thunderbird and from a Gmail export.
+  - Output as a PDF document, an HTML page or plain text.
+  - A header with From, Date, To and Subject above each message body.
+
+  Who it is for
+  Administrators and power users who keep mail off a server and want a local, scriptable way to export a mailbox to files. As an Outlook email to pdf converter it opens .pst and .ost without the account that made them, which suits legal and HR archives, a mailbox left by a former employee, and records kept for audits. The email to pdf job stays on the machine, which matters for patient, client and corporate mail.
+
+  Questions
+  How do I turn my emails into PDF in a batch?
+  Point the program at the stored .eml, .msg, .pst or .ost files and start the run, and it reads them from disk without any mail client.
+  Why won't my email save as a PDF?
+  Classic Outlook has no PDF type in its Save As dialog, so this program reads the saved message or archive and writes the PDF for you.
+  How can I convert emails to PDF for free?
+  The free trial writes up to 10 emails in full with no daily counter, so you can test it on real files before a license lifts the limit.
+  How do I convert an email to PDF on my phone?
+  This is a Windows program, so copy the .eml, .msg or mailbox file to the computer and convert it there.
+Tags:
+- batch-email-converter
+- convert-email-to-pdf
+- email-attachments
+- email-converter
+- email-to-html
+- email-to-pdf
+- email-to-pdf-converter
+- email-to-txt
+- eml-to-pdf
+- mail-archive-to-pdf
+- mbox-to-pdf
+- msg-to-pdf
+- ost-to-pdf
+- pdf-export
+- pst-to-pdf
+PurchaseUrl: https://www.softorbits.net/email-to-pdf-converter-software/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
