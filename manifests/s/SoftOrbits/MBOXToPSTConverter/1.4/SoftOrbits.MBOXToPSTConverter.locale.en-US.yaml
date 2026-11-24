@@ -1,0 +1,70 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.MBOXToPSTConverter
+PackageVersion: '1.4'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: MBOX to PST Converter
+PackageUrl: https://www.softorbits.net/mbox-to-pst-converter/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: MBOX to PST converter for Windows that turns every mailbox exported from Thunderbird, Apple Mail or Unix mail into its own Outlook PST file, offline and with Outlook closed.
+Description: |-
+  Bulk MBOX to PST Converter Software is a Windows mbox to pst converter that reads mailboxes stored in the flat mbox format and writes a separate Outlook data file for each of them. Thunderbird keeps its folders this way, and Apple Mail and classic Unix mail programs export the same kind of file, while Outlook expects PST. The job runs on your own computer. No cloud service sees the messages, and Outlook may stay closed the whole time.
+
+  How to use Bulk MBOX to PST Converter Software
+  1. Install the program and launch it.
+  2. Click Open MBOX... to pick mailbox files, or Add Folder... to load a whole directory of them.
+  3. Type a target in the Save to field, or keep each new file beside its source mailbox.
+  4. Press the Export N messages button, where N is the number of messages found.
+  5. Open the finished data file in Outlook, either as an extra data file or through its import.
+
+  Trial note: the free trial exports small sets in full when they hold 20 messages or fewer. Larger sets get one message in ten, capped at 100, and a license removes that cap.
+
+  What it handles
+  - Mailbox files in mbox format, one or many per run.
+  - The folder tree of each mailbox.
+  - Subjects, HTML bodies and plain text bodies.
+  - Sender, To and Cc recipients, dates and the read or unread flag.
+  - Attachments, copied byte for byte.
+  - Output as a Unicode PST, tested by opening it in Outlook 2016.
+
+  How the output is named
+  The mbox to pst converter writes one PST for every mbox you add, and the file takes the mailbox name. When two mailboxes share a name, the second result gets a _2 suffix. Mailboxes are never merged into one archive, so each user or folder ends up in a file of its own.
+
+  Limits
+  There is no live connection to IMAP or Exchange. EML, MSG, OST and OLM files are covered by separate SoftOrbits tools. No command line, no Mac build, and password protected mailboxes cannot be read.
+
+  Who it is for
+  Admins who need to convert mbox to pst while moving a team from Thunderbird to Outlook. People who kept an old Unix or Apple Mail export and now work in Outlook on Windows. Consultants who take on an mbox to pst job for a client and prefer to keep the mail on a local disk.
+
+  Questions
+
+  How do I convert a Thunderbird MBOX to PST?
+  Copy the mailbox file from Thunderbird to the PC, add it here and press Export. The PST that comes out opens in Outlook.
+
+  Can I open an MBOX file in Outlook?
+  Not directly, because Outlook for Windows reads PST data files. Convert the mailbox first, then open the resulting file.
+
+  What software can convert MBOX files to PST format?
+  A desktop converter like this one. It reads the mbox locally, keeps attachments and folders, and saves a PST on the same machine.
+Tags:
+- email-converter
+- email-migration
+- mail-archive
+- mbox
+- mbox-converter
+- mbox-to-pst
+- outlook-import
+- pst
+- thunderbird-to-outlook
+- unicode-pst
+PurchaseUrl: https://www.softorbits.net/mbox-to-pst-converter/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
