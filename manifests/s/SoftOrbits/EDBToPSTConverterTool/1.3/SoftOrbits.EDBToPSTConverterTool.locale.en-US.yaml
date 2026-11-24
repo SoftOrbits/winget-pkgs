@@ -1,0 +1,67 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.EDBToPSTConverterTool
+PackageVersion: '1.3'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: EDB to PST Converter Tool
+PackageUrl: https://www.softorbits.net/edb-to-pst-converter/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: EDB to PST converter for Windows that opens a Microsoft Exchange 2013, 2016 or 2019 mailbox database file and writes the mailboxes you pick into Outlook PST files with no Exchange server running.
+Description: |-
+  This edb to pst converter is meant for the Exchange admin who is left holding a mailbox database file and no working server, for example after a crash or once a migration has finished. EDB to PST Converter Software opens one .edb file from Exchange 2013, 2016 or 2019 on a Windows PC, lists the mailboxes inside it and writes the ones you select into a Unicode PST that Outlook can open. Exchange does not have to run, Outlook does not have to be installed, and the data is processed on the local disk only.
+
+  How to use EDB to PST Converter Software
+  1. Open the .edb file. The program reads the database and builds a tree of mailboxes with their folders.
+  2. Tick the mailboxes and folders to export. Clicking a folder lists its messages, and clicking a message shows it in the preview pane.
+  3. On the Convert page, set From and To dates if only a period is needed, then choose whether to skip Deleted Items and Junk and whether images go in.
+  4. Pick where the PST should be saved and start the run. A Stop button ends it early.
+
+  Trial note: the program installs as a free trial that exports only a limited sample of messages from your database. A license removes that cap so every selected item is written.
+
+  What it handles
+  - Mailbox databases created by Exchange 2013, 2016 and 2019.
+  - Several mailboxes from one database in a single run, each chosen with its own checkbox.
+  - Subject, HTML body, From, To and Cc fields, dates and the read or unread status of each message.
+  - Attachments copied with their bytes unchanged, plus inline images referenced inside HTML bodies.
+  - The original folder tree of every mailbox, rebuilt inside the PST.
+  - A warning before the start when the database is larger than 2 GB.
+  - A dedicated x64 reader, so a big database is read outside the 32-bit interface.
+
+  Limits
+  Databases from Exchange 2010 and older, public folder databases, live servers and Microsoft 365 are not supported. It does not repair a damaged database, split a PST by size or save to any format other than PST, and there is no command line.
+
+  Who it is for
+  Exchange administrators and IT contractors who need an Exchange EDB to PST export for a user who left, an internal audit or a court request. Forensic examiners who receive a copy of a database and use the edb to pst converter to hand over mail that opens on any PC with Outlook. Small offices whose old server is gone and who want to convert EDB to PST so staff keep their history after a move to a new mail system.
+
+  Questions
+
+  How can I turn a file into a PST?
+  If the file is an Exchange mailbox database, open it in this program, tick the mailboxes and start the run to get a PST. Other file types are not read by this program.
+
+  Can I export an Exchange Online archive to PST with it?
+  No. The program does not connect to Exchange Online or Microsoft 365 and works only with an .edb file copied from an Exchange 2013, 2016 or 2019 server.
+
+  How do I export PST files from eDiscovery?
+  This program has no eDiscovery connection. When the evidence you hold is an Exchange database file, it writes the mailboxes of the custodians you select into PST files, limited to a date range if needed.
+Tags:
+- edb-converter
+- edb-to-pst
+- email-migration
+- exchange-database
+- exchange-edb
+- exchange-mailbox-export
+- mail-recovery
+- mailbox-to-pst
+- outlook-pst
+- pst-converter
+PurchaseUrl: https://www.softorbits.net/edb-to-pst-converter/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
