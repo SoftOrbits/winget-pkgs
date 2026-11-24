@@ -1,0 +1,72 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.FocusStackingSoftware
+PackageVersion: '1.1'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: Focus Stacking Software
+PackageUrl: https://www.softorbits.net/focus-stacking-software/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: Focus stacking software for Windows that merges 20 to 100 macro frames shot at different focus distances into one picture that stays sharp across coins, insects and jewelry.
+Description: |-
+  This focus stacking software for 64-bit Windows 10 and 11 takes a series of macro frames, each focused a little deeper than the last, and merges them into one picture that is sharp across the whole subject. Focus Stacking Software for Macro Photography aligns the shots, finds the sharpest detail at every point and assembles the composite on the local disk. Frames are never uploaded, which matters for museum inventories, auction lots and client work.
+
+  How to use Focus Stacking Software for Macro Photography
+  1. Install and open the program.
+  2. Click Open series and select the frames of one stack, or choose a parent folder where every subfolder is a stack.
+  3. Keep Align frames enabled for rail or tripod sequences.
+  4. Pick Detail or Smooth as the merge method.
+  5. Adjust Radius and Smoothing if halos or noise show up.
+  6. Press Stack and follow the stage line. Stop cancels the run at any point.
+  7. Optionally open Background blur and set how soft the background should get.
+  8. Press Save result and choose 16-bit TIFF, JPEG or PNG.
+
+  Trial note: the free trial runs the full alignment and merge and displays the composite with no mark on it, but saving is disabled, and in subfolder mode only the first series is computed. A license turns saving on.
+
+  What it handles
+  - Camera RAW in CR2, CR3, NEF, ARW, DNG, ORF and RAF, read as linear 16-bit data, plus JPEG and TIFF frames.
+  - Two merge methods: Detail keeps the sharpest pixel by wavelet comparison, Smooth blends along a depth map.
+  - Frame alignment by a two-stage affine ECC search that follows focus breathing over a long rail run.
+  - A Radius control from 3 to 32 next to a Smoothing control.
+  - A parent folder handled as many stacks, each result named after its subfolder.
+  - Background blur with Lens or Soft highlights, always recomputed from the clean merge.
+  - RAM use tied to resolution and not to the frame count, roughly 200 MB per megapixel.
+
+  Requirements
+  Windows 10 or 11, 64-bit, with 8 GB of RAM for frames between 24 and 45 megapixels.
+
+  Who it is for
+  Coin and banknote sellers who need rim, field and relief sharp in one listing photo. Entomology collections and museum digitization teams. Jewelry and watch photographers, microscopy users and anyone shooting small products for a marketplace. Labs and auction houses that keep frames inside their own network can focus stack photos without sending them out.
+
+  Questions
+
+  Is focus stacking worth it?
+  Yes, whenever one frame cannot hold the whole subject in focus, which is the usual case at macro magnification. The extra shots give a record image that a single exposure cannot.
+
+  What is the point of focus stacking?
+  It extends depth of field past what the lens allows at close range. Frames focused at different depths are combined, so every plane of the subject ends up sharp.
+
+  Is there free focus stacking software?
+  This program offers a free trial that merges your own frames and shows the result on screen. Saving the composite requires a paid license.
+Tags:
+- background-blur
+- coin-photography
+- depth-of-field
+- focus-stack
+- focus-stacking
+- image-stacking
+- macro-photography
+- microscopy
+- photo-merge
+- product-photography
+- raw-photos
+PurchaseUrl: https://www.softorbits.net/focus-stacking-software/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
