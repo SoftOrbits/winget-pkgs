@@ -1,0 +1,22 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.MBOXToPSTConverter
+PackageVersion: '1.4'
+InstallerLocale: en-US
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: MBOX to PST Converter_is1
+AppsAndFeaturesEntries:
+- ProductCode: MBOX to PST Converter_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.softorbits.com/filesNew/v/1.4/MboxToPst.exe
+  InstallerSha256: 92D44E191CE7AD635A668EDA039D63A11A1A6BAF123F3C90319427372CF47EE4
+ManifestType: installer
+ManifestVersion: 1.12.0
