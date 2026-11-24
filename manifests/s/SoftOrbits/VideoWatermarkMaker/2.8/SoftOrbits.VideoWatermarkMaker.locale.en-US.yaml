@@ -1,0 +1,65 @@
+# Created with komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SoftOrbits.VideoWatermarkMaker
+PackageVersion: '2.8'
+PackageLocale: en-US
+Publisher: SoftOrbits
+PublisherUrl: https://www.softorbits.net/
+PublisherSupportUrl: https://www.softorbits.net/support.html
+PrivacyUrl: https://www.softorbits.net/privacy-policy.html
+Author: SoftOrbits
+PackageName: Video Watermark Maker
+PackageUrl: https://www.softorbits.net/video-watermark-software/
+License: Proprietary
+LicenseUrl: https://www.softorbits.net/terms.html
+Copyright: Copyright (c) SoftOrbits
+ShortDescription: Video watermark tool for Windows that stamps your own caption or logo onto a whole set of clips in one batch, for creators and teams who brand footage locally before publishing it.
+Description: |-
+  SoftOrbits Video Watermark Maker places a video watermark built from your own caption or logo image onto a whole folder of clips in a single run, and every frame is processed on the local Windows machine. Nothing goes to a web service. Footage stays on your disk until you decide to post it, which matters for unreleased client work and internal recordings.
+
+  How to use SoftOrbits Video Watermark Maker
+  1. Launch the program and drop in the clips that need branding.
+  2. Type a caption to add text to video, or point to an image file that holds your logo.
+  3. Give the mark a time segment if it should appear only during part of a clip.
+  4. Choose where the output goes and start the batch.
+
+  Trial note: a free trial lets you check the result on your own footage first. The unregistered version is restricted, and a license key lifts those restrictions.
+
+  What it handles
+  - Many files per job. One setup is applied across the queue, so you can add logo to video series without opening each clip by hand.
+  - Timed marks. A mark tied to a segment shows up and disappears right on the segment borders, because timing follows frame timestamps rather than progress events.
+  - Modern sources. AV1, VP9 and HEVC recordings open directly, without an intermediate re-encode.
+  - Phone footage. Vertical clips shot on a phone keep their upright orientation.
+  - Hardware encoding. Decoding and encoding run in a separate FFmpeg 7.1 process, and the program takes whichever encoder works first on the machine, trying NVENC on NVIDIA cards, then AMF on AMD, Quick Sync on Intel, Media Foundation and finally x264 on the processor.
+  - Licensing of components. FFmpeg is covered by GPL v3. A pointer to its source code sits in the licenses folder and in the About window.
+
+  Who it is for
+  Channel owners who publish one series on several platforms and want each upload to carry the same video watermark. Small studios that send preview cuts to clients with their name over the picture. Trainers who brand recorded lessons before sharing them. Marketing staff who need to add watermark to video files for a product launch in one pass rather than clip by clip.
+
+  Questions
+
+  What does a watermark on a video mean?
+  It is a visible mark, usually a line of text or a logo, laid over the picture to show who made or owns the clip. Here you build it from your own caption or image file.
+
+  Can a finished video still be watermarked?
+  Yes. Any clip the program can open can get a mark after recording, including AV1, VP9 and HEVC files and upright phone footage.
+
+  How do I add a watermark to a clip for free?
+  The free trial lets you stamp your own clips and judge the output before you buy. If you were looking for a free video watermark tool for regular use, note that full use requires a license.
+Tags:
+- add-logo-to-video
+- add-text-to-video
+- add-watermark-to-video
+- av1
+- batch-video-watermark
+- hevc
+- logo-overlay
+- text-overlay
+- video-branding
+- video-editing
+- video-watermark
+- vp9
+PurchaseUrl: https://www.softorbits.net/video-watermark-software/order.html?utm_source=winget
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
